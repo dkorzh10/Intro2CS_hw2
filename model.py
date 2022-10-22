@@ -1,13 +1,11 @@
 import torch
 import torch.nn as nn
-from torchvision.models import resnet18
+from torchvision.models import resnet50
 
 
 class Model(nn.Module):
     def __init__(self, in_features, out_features):
         super().__init__()
-        self.network = resnet18()
+        self.network = resnet50()
 
-    def forward(self, x):
-        return self.network(x)
         
