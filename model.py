@@ -9,5 +9,6 @@ class Model(nn.Module):
         self.network = resnet18()
 
     def forward(self, x):
-        return self.network(x)
+        x = self.network(x)
+        return x
         
