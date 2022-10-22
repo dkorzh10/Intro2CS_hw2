@@ -8,4 +8,7 @@ class Model(nn.Module):
         super().__init__()
         self.network = resnet50()
 
+    def forward(self, x):
+        x = self.network(x)
+        return x
         
